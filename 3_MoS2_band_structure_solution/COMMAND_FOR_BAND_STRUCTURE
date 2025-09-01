@@ -1,0 +1,1 @@
+python ../cp2k-scripts/bin/cp2k_plot_bands.py bandstructure.bs
