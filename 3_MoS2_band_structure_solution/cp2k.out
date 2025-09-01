@@ -1,3 +1,6 @@
+cpu-bind=MASK - n2cn0909, task  0  0 [3454483]: mask |BBBBBBBB|--------||--------|--------||--------|--------||--------|--------||||--------|--------||--------|--------||--------|--------||--------|--------|  set
+[n2cn0909.ab2021.local:3454483] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././.]
+[n2cn0909.ab2021.local:3454483] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././.]
  DBCSR| CPU Multiplication driver                                           XSMM (U)
  DBCSR| Multrec recursion limit                                              512 (U)
  DBCSR| Multiplication stack size                                           1000 (D)
@@ -18,13 +21,13 @@
  DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00 (U)
 
 
-  **** **** ******  **  PROGRAM STARTED AT               2025-09-01 10:36:45.503
- ***** ** ***  *** **   PROGRAM STARTED ON                 n2cn0906.ab2021.local
+  **** **** ******  **  PROGRAM STARTED AT               2025-09-01 13:33:33.042
+ ***** ** ***  *** **   PROGRAM STARTED ON                 n2cn0909.ab2021.local
  **    ****   ******    PROGRAM STARTED BY                              eprop2d1
- ***** **    ** ** **   PROGRAM PROCESS ID                               3493548
+ ***** **    ** ** **   PROGRAM PROCESS ID                               3454483
   **** **  *******  **  PROGRAM STARTED IN /scratch/hpc-prf-metdyn/eprop2d1_Jan/
                                            49_CP2K_Tutorial/3_MoS2_band_structur
-                                           e
+                                           e_exercise/1_solution
 
  CP2K| version string:                 CP2K version 2024.1 (Development Version)
  CP2K| source code revision number:                                  git:39f62df
@@ -72,13 +75,13 @@
 
  MEMORY| system memory details [Kb]
  MEMORY|                        rank 0           min           max       average
- MEMORY| MemTotal            263897628     263897628     263897628     263897628
- MEMORY| MemFree             235807772     235807772     235807772     235807772
- MEMORY| Buffers                 38576         38576         38576         38576
- MEMORY| Cached               16969660      16969660      16969660      16969660
- MEMORY| Slab                  6882812       6882812       6882812       6882812
- MEMORY| SReclaimable          1875800       1875800       1875800       1875800
- MEMORY| MemLikelyFree       254691808     254691808     254691808     254691808
+ MEMORY| MemTotal            263897608     263897608     263897608     263897608
+ MEMORY| MemFree             240520976     240520976     240520976     240520976
+ MEMORY| Buffers                 59772         59772         59772         59772
+ MEMORY| Cached               15653480      15653480      15653480      15653480
+ MEMORY| Slab                  3720812       3720812       3720812       3720812
+ MEMORY| SReclaimable           780796        780796        780796        780796
+ MEMORY| MemLikelyFree       257015024     257015024     257015024     257015024
 
 
  *** Fundamental physical constants (SI units) ***
@@ -125,10 +128,10 @@
  [a.u./Bohr**2] -> [1/cm]                                   5.14048714338585E+03
  
 
- CELL_TOP| Volume [angstrom^3]:                                       131.694613
+ CELL_TOP| Volume [angstrom^3]:                                       159.148549
  CELL_TOP| Vector a [angstrom     3.184     0.000     0.000   |a| =     3.184000
  CELL_TOP| Vector b [angstrom    -1.592     2.757     0.000   |b| =     3.184000
- CELL_TOP| Vector c [angstrom     0.000     0.000    15.000   |c| =    15.000000
+ CELL_TOP| Vector c [angstrom     0.000     0.000    18.127   |c| =    18.127000
  CELL_TOP| Angle (b,c), alpha [degree]:                                90.000000
  CELL_TOP| Angle (a,c), beta  [degree]:                                90.000000
  CELL_TOP| Angle (a,b), gamma [degree]:                               120.000000
@@ -138,20 +141,20 @@
  GENERATE|  Preliminary Number of Bonds generated:                             0
  GENERATE|  Achieved consistency in connectivity generation.
 
- CELL| Volume [angstrom^3]:                                           131.694613
+ CELL| Volume [angstrom^3]:                                           159.148549
  CELL| Vector a [angstrom]:       3.184     0.000     0.000   |a| =     3.184000
  CELL| Vector b [angstrom]:      -1.592     2.757     0.000   |b| =     3.184000
- CELL| Vector c [angstrom]:       0.000     0.000    15.000   |c| =    15.000000
+ CELL| Vector c [angstrom]:       0.000     0.000    18.127   |c| =    18.127000
  CELL| Angle (b,c), alpha [degree]:                                    90.000000
  CELL| Angle (a,c), beta  [degree]:                                    90.000000
  CELL| Angle (a,b), gamma [degree]:                                   120.000000
  CELL| Numerically orthorhombic:                                              NO
  CELL| Periodicity                                                            XY
 
- CELL_REF| Volume [angstrom^3]:                                       131.694613
+ CELL_REF| Volume [angstrom^3]:                                       159.148549
  CELL_REF| Vector a [angstrom     3.184     0.000     0.000   |a| =     3.184000
  CELL_REF| Vector b [angstrom    -1.592     2.757     0.000   |b| =     3.184000
- CELL_REF| Vector c [angstrom     0.000     0.000    15.000   |c| =    15.000000
+ CELL_REF| Vector c [angstrom     0.000     0.000    18.127   |c| =    18.127000
  CELL_REF| Angle (b,c), alpha [degree]:                                90.000000
  CELL_REF| Angle (a,c), beta  [degree]:                                90.000000
  CELL_REF| Angle (a,b), gamma [degree]:                               120.000000
@@ -687,9 +690,9 @@
  MODULE QUICKSTEP: ATOMIC COORDINATES IN ANGSTROM
 
    Atom Kind Element         X             Y             Z       Z(eff)     Mass
-      1    1 Mo   42      0.000000      0.000000      9.063556  14.0000  95.9600
-      2    2 S    16      1.592033      0.919161     10.627113   6.0000  32.0650
-      3    2 S    16      1.592033      0.919161      7.500000   6.0000  32.0650
+      1    1 Mo   42      0.795983      0.919132      9.063500  14.0000  95.9600
+      2    2 S    16      2.388017      1.838293     10.627056   6.0000  32.0650
+      3    2 S    16      2.388017      1.838293      7.499944   6.0000  32.0650
 
 
 
@@ -716,8 +719,8 @@
  PW_GRID| spherical cutoff:                                                   NO
  PW_GRID|   Bounds   1            -22      22                Points:          45
  PW_GRID|   Bounds   2            -22      22                Points:          45
- PW_GRID|   Bounds   3           -108     107                Points:         216
- PW_GRID| Volume element (a.u.^3)  0.2032E-02     Volume (a.u.^3)       888.7193
+ PW_GRID|   Bounds   3           -121     121                Points:         243
+ PW_GRID| Volume element (a.u.^3)  0.2183E-02     Volume (a.u.^3)      1073.9877
  PW_GRID| Grid span                                                    FULLSPACE
 
  PW_GRID| Information for grid number                                          2
@@ -726,8 +729,8 @@
  PW_GRID| spherical cutoff:                                                   NO
  PW_GRID|   Bounds   1            -12      12                Points:          25
  PW_GRID|   Bounds   2            -12      12                Points:          25
- PW_GRID|   Bounds   3            -60      59                Points:         120
- PW_GRID| Volume element (a.u.^3)  0.1185E-01     Volume (a.u.^3)       888.7193
+ PW_GRID|   Bounds   3            -72      71                Points:         144
+ PW_GRID| Volume element (a.u.^3)  0.1193E-01     Volume (a.u.^3)      1073.9877
  PW_GRID| Grid span                                                    FULLSPACE
 
  PW_GRID| Information for grid number                                          3
@@ -736,8 +739,8 @@
  PW_GRID| spherical cutoff:                                                   NO
  PW_GRID|   Bounds   1             -7       7                Points:          15
  PW_GRID|   Bounds   2             -7       7                Points:          15
- PW_GRID|   Bounds   3            -36      35                Points:          72
- PW_GRID| Volume element (a.u.^3)  0.5486E-01     Volume (a.u.^3)       888.7193
+ PW_GRID|   Bounds   3            -40      40                Points:          81
+ PW_GRID| Volume element (a.u.^3)  0.5893E-01     Volume (a.u.^3)      1073.9877
  PW_GRID| Grid span                                                    FULLSPACE
 
  PW_GRID| Information for grid number                                          4
@@ -746,8 +749,8 @@
  PW_GRID| spherical cutoff:                                                   NO
  PW_GRID|   Bounds   1             -4       4                Points:           9
  PW_GRID|   Bounds   2             -4       4                Points:           9
- PW_GRID|   Bounds   3            -20      19                Points:          40
- PW_GRID| Volume element (a.u.^3)  0.2743         Volume (a.u.^3)       888.7193
+ PW_GRID|   Bounds   3            -24      23                Points:          48
+ PW_GRID| Volume element (a.u.^3)  0.2762         Volume (a.u.^3)      1073.9877
  PW_GRID| Grid span                                                    FULLSPACE
 
  POISSON| Solver                                                        PERIODIC
@@ -760,22 +763,22 @@
  RS_GRID| Information for grid number                                          1
  RS_GRID|   Bounds   1            -22      22                Points:          45
  RS_GRID|   Bounds   2            -22      22                Points:          45
- RS_GRID|   Bounds   3           -108     107                Points:         216
+ RS_GRID|   Bounds   3           -121     121                Points:         243
 
  RS_GRID| Information for grid number                                          2
  RS_GRID|   Bounds   1            -12      12                Points:          25
  RS_GRID|   Bounds   2            -12      12                Points:          25
- RS_GRID|   Bounds   3            -60      59                Points:         120
+ RS_GRID|   Bounds   3            -72      71                Points:         144
 
  RS_GRID| Information for grid number                                          3
  RS_GRID|   Bounds   1             -7       7                Points:          15
  RS_GRID|   Bounds   2             -7       7                Points:          15
- RS_GRID|   Bounds   3            -36      35                Points:          72
+ RS_GRID|   Bounds   3            -40      40                Points:          81
 
  RS_GRID| Information for grid number                                          4
  RS_GRID|   Bounds   1             -4       4                Points:           9
  RS_GRID|   Bounds   2             -4       4                Points:           9
- RS_GRID|   Bounds   3            -20      19                Points:          40
+ RS_GRID|   Bounds   3            -24      23                Points:          48
 
  Number of electrons:                                                         26
  Number of occupied orbitals:                                                 13
@@ -886,66 +889,64 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 NoMix/Diag. 0.10E+00    0.5     2.12775048       -89.0857264818 -8.91E+01
-     2 Broy./Diag. 0.10E+00    0.7     0.03337571       -90.7724280433 -1.69E+00
-     3 Broy./Diag. 0.10E+00    0.6     0.24628954       -90.0751680291  6.97E-01
-     4 Broy./Diag. 0.10E+00    0.6     0.04788243       -88.7028458322  1.37E+00
-     5 Broy./Diag. 0.10E+00    0.6     0.04213183       -88.8687493397 -1.66E-01
-     6 Broy./Diag. 0.10E+00    0.6     0.03721731       -88.5841462393  2.85E-01
-     7 Broy./Diag. 0.10E+00    0.6     0.00707637       -88.7724031848 -1.88E-01
-     8 Broy./Diag. 0.10E+00    0.7     0.00426994       -88.7243339124  4.81E-02
-     9 Broy./Diag. 0.10E+00    0.7     0.00219131       -88.7339145469 -9.58E-03
-    10 Broy./Diag. 0.10E+00    0.7     0.00071252       -88.7301628584  3.75E-03
-    11 Broy./Diag. 0.10E+00    0.7     0.00210059       -88.7418594234 -1.17E-02
-    12 Broy./Diag. 0.10E+00    0.7     0.00020194       -88.7532081678 -1.13E-02
-    13 Broy./Diag. 0.10E+00    0.7     0.00070283       -88.7570539199 -3.85E-03
-    14 Broy./Diag. 0.10E+00    0.6     0.00016875       -88.7593416173 -2.29E-03
-    15 Broy./Diag. 0.10E+00    0.7     0.00018160       -88.7584433802  8.98E-04
-    16 Broy./Diag. 0.10E+00    0.6     0.00011736       -88.7578013263  6.42E-04
-    17 Broy./Diag. 0.10E+00    0.7     0.00001987       -88.7578521064 -5.08E-05
-    18 Broy./Diag. 0.10E+00    0.6     0.00005062       -88.7575749566  2.77E-04
-    19 Broy./Diag. 0.10E+00    0.6     0.00000929       -88.7576889754 -1.14E-04
-    20 Broy./Diag. 0.10E+00    0.7     0.00002821       -88.7579990940 -3.10E-04
-    21 Broy./Diag. 0.10E+00    0.6     0.00001056       -88.7582501441 -2.51E-04
-    22 Broy./Diag. 0.10E+00    0.6     0.00002620       -88.7585073767 -2.57E-04
-    23 Broy./Diag. 0.10E+00    0.6     0.00000175       -88.7585266434 -1.93E-05
-    24 Broy./Diag. 0.10E+00    0.7     0.00001202       -88.7584588373  6.78E-05
-    25 Broy./Diag. 0.10E+00    0.7     0.00000460       -88.7584612561 -2.42E-06
-    26 Broy./Diag. 0.10E+00    0.7     0.00000988       -88.7583644389  9.68E-05
-    27 Broy./Diag. 0.10E+00    0.6     0.00000251       -88.7582826771  8.18E-05
-    28 Broy./Diag. 0.10E+00    0.6     0.00000554       -88.7582993798 -1.67E-05
-    29 Broy./Diag. 0.10E+00    0.6     0.00000132       -88.7583378271 -3.84E-05
-    30 Broy./Diag. 0.10E+00    0.6     0.00000435       -88.7583785588 -4.07E-05
-    31 Broy./Diag. 0.10E+00    0.7     0.00000179       -88.7583866144 -8.06E-06
-    32 Broy./Diag. 0.10E+00    0.6     0.00000026       -88.7583778282  8.79E-06
-    33 Broy./Diag. 0.10E+00    0.6     0.00000111       -88.7583613926  1.64E-05
-    34 Broy./Diag. 0.10E+00    0.7     0.00000072       -88.7583599421  1.45E-06
-    35 Broy./Diag. 0.10E+00    0.6     0.00000062       -88.7583643515 -4.41E-06
-    36 Broy./Diag. 0.10E+00    0.6     0.00000016       -88.7583681894 -3.84E-06
-    37 Broy./Diag. 0.10E+00    0.6     0.00000032       -88.7583700792 -1.89E-06
-    38 Broy./Diag. 0.10E+00    0.6     0.00000041       -88.7583673179  2.76E-06
-    39 Broy./Diag. 0.10E+00    0.7     0.00000011       -88.7583633282  3.99E-06
-    40 Broy./Diag. 0.10E+00    0.7     0.00000015       -88.7583612819  2.05E-06
-    41 Broy./Diag. 0.10E+00    0.7     0.00000003       -88.7583618379 -5.56E-07
-    42 Broy./Diag. 0.10E+00    0.7     0.00000006       -88.7583624872 -6.49E-07
-    43 Broy./Diag. 0.10E+00    0.6     0.00000001       -88.7583628680 -3.81E-07
-    44 Broy./Diag. 0.10E+00    0.6     0.00000003       -88.7583628166  5.14E-08
-    45 Broy./Diag. 0.10E+00    0.6     0.00000007       -88.7583622407  5.76E-07
-    46 Broy./Diag. 0.10E+00    0.7     0.00000001       -88.7583621724  6.83E-08
-    47 Broy./Diag. 0.10E+00    0.7     0.00000003       -88.7583619761  1.96E-07
-    48 Broy./Diag. 0.10E+00    0.7     0.00000002       -88.7583622232 -2.47E-07
-    49 Broy./Diag. 0.10E+00    0.6     0.00000003       -88.7583625389 -3.16E-07
-    50 Broy./Diag. 0.10E+00    0.6     0.00000003       -88.7583627313 -1.92E-07
-    51 Broy./Diag. 0.10E+00    0.6     7.8053E-09       -88.7583626375  9.38E-08
-    52 Broy./Diag. 0.10E+00    0.6     0.00000001       -88.7583626082  2.93E-08
-    53 Broy./Diag. 0.10E+00    0.6     1.4806E-09       -88.7583626333 -2.51E-08
-    54 Broy./Diag. 0.10E+00    0.6     4.3947E-09       -88.7583626586 -2.53E-08
-    55 Broy./Diag. 0.10E+00    0.6     2.6790E-09       -88.7583626999 -4.12E-08
-    56 Broy./Diag. 0.10E+00    0.6     1.4696E-09       -88.7583627167 -1.69E-08
-    57 Broy./Diag. 0.10E+00    0.6     1.4288E-09       -88.7583627159  8.23E-10
-    58 Broy./Diag. 0.10E+00    0.6     6.6909E-10       -88.7583627012  1.47E-08
+     1 NoMix/Diag. 0.10E+00    0.6     2.12775093       -89.0857269257 -8.91E+01
+     2 Broy./Diag. 0.10E+00    0.7     0.03335901       -90.7724221181 -1.69E+00
+     3 Broy./Diag. 0.10E+00    0.7     0.24650049       -90.0745531783  6.98E-01
+     4 Broy./Diag. 0.10E+00    0.6     0.04729934       -88.6994506203  1.38E+00
+     5 Broy./Diag. 0.10E+00    0.6     0.04052742       -88.8662929221 -1.67E-01
+     6 Broy./Diag. 0.10E+00    0.6     0.03640148       -88.5910868050  2.75E-01
+     7 Broy./Diag. 0.10E+00    0.6     0.00681874       -88.7744568454 -1.83E-01
+     8 Broy./Diag. 0.10E+00    0.6     0.00399336       -88.7277352296  4.67E-02
+     9 Broy./Diag. 0.10E+00    0.6     0.00223850       -88.7354972745 -7.76E-03
+    10 Broy./Diag. 0.10E+00    0.6     0.00067922       -88.7318687391  3.63E-03
+    11 Broy./Diag. 0.10E+00    0.7     0.00208530       -88.7423898658 -1.05E-02
+    12 Broy./Diag. 0.10E+00    0.6     0.00022035       -88.7526998033 -1.03E-02
+    13 Broy./Diag. 0.10E+00    0.6     0.00068021       -88.7563811755 -3.68E-03
+    14 Broy./Diag. 0.10E+00    0.6     0.00021165       -88.7588144890 -2.43E-03
+    15 Broy./Diag. 0.10E+00    0.6     0.00015244       -88.7584557391  3.59E-04
+    16 Broy./Diag. 0.10E+00    0.6     0.00016303       -88.7576870038  7.69E-04
+    17 Broy./Diag. 0.10E+00    0.6     0.00001774       -88.7579108410 -2.24E-04
+    18 Broy./Diag. 0.10E+00    0.6     0.00006769       -88.7575571117  3.54E-04
+    19 Broy./Diag. 0.10E+00    0.6     0.00000869       -88.7576884447 -1.31E-04
+    20 Broy./Diag. 0.10E+00    0.6     0.00003484       -88.7580176073 -3.29E-04
+    21 Broy./Diag. 0.10E+00    0.6     0.00000842       -88.7582783828 -2.61E-04
+    22 Broy./Diag. 0.10E+00    0.6     0.00002774       -88.7585539125 -2.76E-04
+    23 Broy./Diag. 0.10E+00    0.6     0.00000185       -88.7585793872 -2.55E-05
+    24 Broy./Diag. 0.10E+00    0.6     0.00001143       -88.7584910318  8.84E-05
+    25 Broy./Diag. 0.10E+00    0.7     0.00000477       -88.7584781951  1.28E-05
+    26 Broy./Diag. 0.10E+00    0.6     0.00001336       -88.7583580509  1.20E-04
+    27 Broy./Diag. 0.10E+00    0.7     0.00000301       -88.7582595084  9.85E-05
+    28 Broy./Diag. 0.10E+00    0.6     0.00000584       -88.7582888966 -2.94E-05
+    29 Broy./Diag. 0.10E+00    0.6     0.00000055       -88.7583300756 -4.12E-05
+    30 Broy./Diag. 0.10E+00    0.7     0.00000279       -88.7583544196 -2.43E-05
+    31 Broy./Diag. 0.10E+00    0.6     0.00000108       -88.7583659797 -1.16E-05
+    32 Broy./Diag. 0.10E+00    0.7     0.00000043       -88.7583729482 -6.97E-06
+    33 Broy./Diag. 0.10E+00    0.7     0.00000049       -88.7583712052  1.74E-06
+    34 Broy./Diag. 0.10E+00    0.7     0.00000017       -88.7583690947  2.11E-06
+    35 Broy./Diag. 0.10E+00    0.7     0.00000044       -88.7583641902  4.90E-06
+    36 Broy./Diag. 0.10E+00    0.7     0.00000015       -88.7583634046  7.86E-07
+    37 Broy./Diag. 0.10E+00    0.6     0.00000028       -88.7583631790  2.26E-07
+    38 Broy./Diag. 0.10E+00    0.7     0.00000010       -88.7583639544 -7.75E-07
+    39 Broy./Diag. 0.10E+00    0.6     0.00000029       -88.7583623223  1.63E-06
+    40 Broy./Diag. 0.10E+00    0.6     0.00000007       -88.7583603643  1.96E-06
+    41 Broy./Diag. 0.10E+00    0.6     0.00000019       -88.7583609131 -5.49E-07
+    42 Broy./Diag. 0.10E+00    0.6     0.00000006       -88.7583618194 -9.06E-07
+    43 Broy./Diag. 0.10E+00    0.6     0.00000014       -88.7583618378 -1.84E-08
+    44 Broy./Diag. 0.10E+00    0.6     0.00000005       -88.7583623833 -5.45E-07
+    45 Broy./Diag. 0.10E+00    0.6     0.00000007       -88.7583630961 -7.13E-07
+    46 Broy./Diag. 0.10E+00    0.6     0.00000002       -88.7583633848 -2.89E-07
+    47 Broy./Diag. 0.10E+00    0.6     0.00000004       -88.7583633967 -1.19E-08
+    48 Broy./Diag. 0.10E+00    0.6     9.8126E-09       -88.7583631861  2.11E-07
+    49 Broy./Diag. 0.10E+00    0.7     0.00000001       -88.7583628912  2.95E-07
+    50 Broy./Diag. 0.10E+00    0.6     0.00000001       -88.7583628769  1.43E-08
+    51 Broy./Diag. 0.10E+00    0.6     0.00000002       -88.7583630361 -1.59E-07
+    52 Broy./Diag. 0.10E+00    0.6     0.00000003       -88.7583631304 -9.43E-08
+    53 Broy./Diag. 0.10E+00    0.6     0.00000001       -88.7583629463  1.84E-07
+    54 Broy./Diag. 0.10E+00    0.7     6.2987E-09       -88.7583628603  8.59E-08
+    55 Broy./Diag. 0.10E+00    0.6     6.7492E-09       -88.7583628589  1.40E-09
+    56 Broy./Diag. 0.10E+00    0.6     6.8529E-10       -88.7583628545  4.43E-09
 
-  *** SCF run converged in    58 steps ***
+  *** SCF run converged in    56 steps ***
 
 
   Electronic density on regular grids:        -26.0000000000        0.0000000000
@@ -955,17 +956,17 @@
 
   Overlap energy of the core charge distribution:               0.00000000000362
   Self energy of the core charge distribution:               -176.94184945816679
-  Core Hamiltonian energy:                                     39.84270486581212
-  Hartree energy:                                              60.78062065427301
-  Exchange-correlation energy:                                -12.43983876309844
+  Core Hamiltonian energy:                                     39.84270447847628
+  Hartree energy:                                              60.78062103402668
+  Exchange-correlation energy:                                -12.43983890883455
 
-  Total energy:                                               -88.75836270117648
+  Total energy:                                               -88.75836285449478
 
  !-----------------------------------------------------------------------------!
                      Mulliken Population Analysis
 
  #  Atom  Element  Kind  Atomic population                           Net charge
-       1     Mo       1         14.859223                             -0.859223
+       1     Mo       1         14.859222                             -0.859222
        2     S        2          5.570389                              0.429611
        3     S        2          5.570389                              0.429611
  # Total charge                             26.000000                  0.000000
@@ -992,9 +993,9 @@
  KPOINTS| Special point     2           K     0.333333     0.333333     0.000000
  KPOINTS| Special point     3           M     0.000000     0.500000     0.000000
  KPOINTS| Special point     4       GAMMA     0.000000     0.000000     0.000000
- KPOINTS| Time for k-point line                                            0.821
+ KPOINTS| Time for k-point line                                            0.808
 
- ENERGY| Total FORCE_EVAL ( QS ) energy [a.u.]:              -88.758362701176480
+ ENERGY| Total FORCE_EVAL ( QS ) energy [a.u.]:              -88.758362854494777
 
  -------------------------------------------------------------------------------
  -                                                                             -
@@ -1017,8 +1018,8 @@
  -------------------------------------------------------------------------------
  ROUTINE             CALLS      AVE VOLUME [Bytes]
  MP_Bcast                1                     12.
- MP_Allreduce        27976                      8.
- MP_Alltoall        170932                  14287.
+ MP_Allreduce        27012                      8.
+ MP_Alltoall        165684                  14290.
  -------------------------------------------------------------------------------
 
  -------------------------------------------------------------------------------
@@ -1035,17 +1036,17 @@
  -                                                                             -
  -------------------------------------------------------------------------------
  LP    KERNEL             BACKEND                              COUNT     PERCENT
- 5     collocate general  CPU                                 178416      18.46%
- 5     integrate general  CPU                                 175392      18.15%
- 4     collocate general  CPU                                 174994      18.11%
- 4     integrate general  CPU                                 172028      17.80%
- 6     collocate general  CPU                                 133871      13.85%
- 6     integrate general  CPU                                 131602      13.62%
+ 5     collocate general  CPU                                 172368      18.47%
+ 5     integrate general  CPU                                 169344      18.15%
+ 4     collocate general  CPU                                 169062      18.11%
+ 4     integrate general  CPU                                 166096      17.80%
+ 6     collocate general  CPU                                 129333      13.86%
+ 6     integrate general  CPU                                 127064      13.61%
  0     collocate general  CPU                                      6       0.00%
  0     integrate general  CPU                                      3       0.00%
  -------------------------------------------------------------------------------
 
- MEMORY| Estimated peak process memory [MiB]                                 782
+ MEMORY| Estimated peak process memory [MiB]                                 820
 
  -------------------------------------------------------------------------------
  ----                             MULTIGRID INFO                            ----
@@ -1064,12 +1065,12 @@
 
  ROUTINE             CALLS      AVE VOLUME [Bytes]
  MP_Group                4
- MP_Bcast            70426                      7.
- MP_Allreduce        15070                     26.
+ MP_Bcast            68120                      7.
+ MP_Allreduce        14576                     26.
  MP_Sync                 4
- MP_Wait             58640
- MP_ISend            82096                   3096.
- MP_IRecv            82096                   3096.
+ MP_Wait             56720
+ MP_ISend            79408                   3096.
+ MP_IRecv            79408                   3096.
  -------------------------------------------------------------------------------
 
 
@@ -1185,48 +1186,49 @@
  -------------------------------------------------------------------------------
  SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
                                 MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
- CP2K                                 1  1.0    0.017    0.017   39.285   39.285
- qs_energies                          1  2.0    0.008    0.008   39.177   39.177
- scf_env_do_scf                       1  3.0    0.000    0.000   37.900   37.900
- scf_env_do_scf_inner_loop           58  4.0    0.007    0.007   37.900   37.900
- qs_ks_update_qs_env                 58  5.0    0.000    0.000   15.150   15.150
- rebuild_ks_matrix                   58  6.0    0.000    0.000   15.070   15.070
- qs_ks_build_kohn_sham_matrix        58  7.0    0.013    0.013   15.070   15.070
- sum_up_and_integrate                58  8.0    0.000    0.000   12.494   12.494
- integrate_v_rspace                  58  9.0    0.027    0.027   12.479   12.479
- grid_integrate_task_list            58 10.0   12.291   12.291   12.291   12.291
- qs_rho_update_rho_low               59  5.0    0.000    0.000   11.939   11.939
- calculate_rho_elec                  59  6.0    0.099    0.099   11.939   11.939
- grid_collocate_task_list            59  7.0   11.498   11.498   11.498   11.498
- do_general_diag_kp                  59  5.9    0.025    0.025    9.817    9.817
- qs_scf_new_mos_kp                   58  5.0    0.000    0.000    9.004    9.004
- rskp_transform                    4008  6.8    3.904    3.904    3.904    3.904
- kpoint_density_transform            58  7.0    0.011    0.011    2.483    2.483
- qs_vxc_create                       58  8.0    0.000    0.000    2.068    2.068
- xc_vxc_pw_create                    58  9.0    0.111    0.111    2.068    2.068
- transform_dmat                    1856  8.0    1.855    1.855    1.855    1.855
- gspace_mixing                       57  5.0    0.086    0.086    1.728    1.728
- broyden_mixing                      57  6.0    1.526    1.526    1.527    1.527
- xc_rho_set_and_dset_create          58 10.0    0.054    0.054    1.397    1.397
- fft_wrap_pw1pw2                   1049 10.0    0.007    0.007    1.305    1.305
- fft_wrap_pw1pw2_250                698 11.3    0.085    0.085    1.246    1.246
- copy_dbcsr_to_fm                  8739  6.7    0.039    0.039    1.093    1.093
- cp_cfm_geeig                      2004  6.8    0.005    0.005    0.990    0.990
- xc_functional_eval                  58 11.0    0.000    0.000    0.911    0.911
- pbe_lda_eval                        58 12.0    0.911    0.911    0.911    0.911
- cp_fm_start_copy_general         11728  7.2    0.225    0.225    0.857    0.857
- dbcsr_complete_redistribute      12451  8.1    0.254    0.254    0.833    0.833
- xc_pw_derive                       348 11.0    0.001    0.001    0.793    0.793
- cp_cfm_heevd                      2004  7.8    0.788    0.788    0.788    0.788
+ CP2K                                 1  1.0    0.198    0.198   38.792   38.792
+ qs_energies                          1  2.0    0.036    0.036   38.181   38.181
+ scf_env_do_scf                       1  3.0    0.002    0.002   36.581   36.581
+ scf_env_do_scf_inner_loop           56  4.0    0.007    0.007   36.580   36.580
+ qs_ks_update_qs_env                 56  5.0    0.000    0.000   14.670   14.670
+ rebuild_ks_matrix                   56  6.0    0.000    0.000   14.593   14.593
+ qs_ks_build_kohn_sham_matrix        56  7.0    0.014    0.014   14.593   14.593
+ sum_up_and_integrate                56  8.0    0.011    0.011   11.659   11.659
+ integrate_v_rspace                  56  9.0    0.026    0.026   11.631   11.631
+ grid_integrate_task_list            56 10.0   11.416   11.416   11.416   11.416
+ qs_rho_update_rho_low               57  5.0    0.000    0.000   11.229   11.229
+ calculate_rho_elec                  57  6.0    0.106    0.106   11.228   11.228
+ grid_collocate_task_list            57  7.0   10.731   10.731   10.731   10.731
+ do_general_diag_kp                  57  5.9    0.026    0.026    9.540    9.540
+ qs_scf_new_mos_kp                   56  5.0    0.000    0.000    8.739    8.739
+ rskp_transform                    3880  6.8    3.766    3.766    3.766    3.766
+ kpoint_density_transform            56  7.0    0.012    0.012    2.390    2.390
+ qs_vxc_create                       56  8.0    0.003    0.003    2.374    2.374
+ xc_vxc_pw_create                    56  9.0    0.122    0.122    2.371    2.371
+ gspace_mixing                       55  5.0    0.094    0.094    1.866    1.866
+ transform_dmat                    1792  8.0    1.783    1.783    1.783    1.783
+ broyden_mixing                      55  6.0    1.645    1.645    1.646    1.646
+ xc_rho_set_and_dset_create          56 10.0    0.072    0.072    1.590    1.590
+ fft_wrap_pw1pw2                   1013 10.0    0.007    0.007    1.520    1.520
+ fft_wrap_pw1pw2_250                674 11.3    0.095    0.095    1.450    1.450
+ copy_dbcsr_to_fm                  8483  6.7    0.039    0.039    1.069    1.069
+ xc_functional_eval                  56 11.0    0.000    0.000    1.000    1.000
+ pbe_lda_eval                        56 12.0    1.000    1.000    1.000    1.000
+ cp_cfm_geeig                      1940  6.8    0.005    0.005    0.983    0.983
+ xc_pw_derive                       336 11.0    0.001    0.001    0.943    0.943
+ cp_fm_start_copy_general         11344  7.2    0.228    0.228    0.842    0.842
+ fft3d_s                           1014 12.0    0.819    0.819    0.824    0.824
+ dbcsr_complete_redistribute      12067  8.1    0.250    0.250    0.817    0.817
+ cp_cfm_heevd                      1940  7.8    0.784    0.784    0.784    0.784
  -------------------------------------------------------------------------------
 
  The number of warnings for this run is : 1
  
  -------------------------------------------------------------------------------
-  **** **** ******  **  PROGRAM ENDED AT                 2025-09-01 10:37:26.530
- ***** ** ***  *** **   PROGRAM RAN ON                     n2cn0906.ab2021.local
+  **** **** ******  **  PROGRAM ENDED AT                 2025-09-01 13:34:14.883
+ ***** ** ***  *** **   PROGRAM RAN ON                     n2cn0909.ab2021.local
  **    ****   ******    PROGRAM RAN BY                                  eprop2d1
- ***** **    ** ** **   PROGRAM PROCESS ID                               3493548
+ ***** **    ** ** **   PROGRAM PROCESS ID                               3454483
   **** **  *******  **  PROGRAM STOPPED IN /scratch/hpc-prf-metdyn/eprop2d1_Jan/
                                            49_CP2K_Tutorial/3_MoS2_band_structur
-                                           e
+                                           e_exercise/1_solution

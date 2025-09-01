@@ -49,8 +49,8 @@
   &END DFT
   &SUBSYS
     &CELL
-      ABC                 3.184	3.184 15.0
-      ALPHA_BETA_GAMMA    90 90 120
+      ABC                3.184 3.184 18.127
+      ALPHA_BETA_GAMMA   90 90 120
       PERIODIC XY
     &END CELL
     
@@ -69,5 +69,11 @@ Mo       0.00000000       0.00000000       9.06355632
 S        1.59203323       0.91916082      10.62711265
 S        1.59203323       0.91916082       7.50000000
     &END COORD
+
+    &TOPOLOGY
+      &CENTER_COORDINATES
+      &END
+    &END
+
   &END SUBSYS
 &END FORCE_EVAL
