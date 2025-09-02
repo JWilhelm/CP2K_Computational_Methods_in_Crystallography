@@ -1,0 +1,343 @@
+####################################################################### 
+# 
+# This file contains crystal structure data downloaded from the 
+# Cambridge Structural Database (CSD) hosted by the Cambridge 
+# Crystallographic Data Centre (CCDC).
+# 
+# Full information about CCDC data access policies and citation 
+# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1 
+# 
+# Audit and citation data items may have been added by the CCDC. 
+# Please retain this information to preserve the provenance of 
+# this file and to allow appropriate attribution of the data. 
+# 
+#######################################################################
+
+data_lala60k
+_audit_block_doi                 10.5517/cc9brt5
+_database_code_depnum_ccdc_archive 'CCDC 278467'
+loop_
+_citation_id
+_citation_doi
+_citation_year
+1 10.1039/b419295h 2005
+_audit_update_record             
+;
+2005-07-14 deposited with the CCDC.	2025-09-01 downloaded from the CCDC.
+;
+
+_audit_creation_method           SHELXL-97
+_chemical_name_systematic        
+;
+?
+;
+_chemical_name_common            ?
+_chemical_melting_point          ?
+_chemical_formula_moiety         ?
+_chemical_formula_sum            'C3 H7 N O2'
+_chemical_formula_weight         89.00
+
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_length_neutron
+_atom_type_scat_source
+C C 6.646 International
+Tables Vol C Table
+4.4.4.1 H H -3.739
+International Tables Vol C
+Table 4.4.4.1 N N
+9.360 International Tables Vol
+C Table 4.4.4.1 O
+O 5.803 International Tables
+Vol C Table 4.4.4.1
+
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_H-M   P212121
+
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'x+1/2, -y+1/2, -z'
+'-x, y+1/2, -z+1/2'
+'-x+1/2, -y, z+1/2'
+
+_cell_length_a                   5.940(3)
+_cell_length_b                   12.274(5)
+_cell_length_c                   5.806(3)
+_cell_angle_alpha                90.000
+_cell_angle_beta                 90.000
+_cell_angle_gamma                90.000
+_cell_volume                     423.30
+_cell_formula_units_Z            4
+_cell_measurement_temperature    60(1)
+_cell_measurement_reflns_used    25
+_cell_measurement_theta_min      ?
+
+_exptl_crystal_description       'irregular prism'
+_exptl_crystal_colour            colourless
+_exptl_crystal_size_max          5.0
+_exptl_crystal_size_mid          3.0
+_exptl_crystal_size_min          2.0
+_exptl_crystal_density_meas      ?
+_exptl_crystal_density_diffrn    1.397
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_F_000             5.87
+_exptl_absorpt_coefficient_mu    '2.610, at 1 Angstrom'
+_exptl_absorpt_correction_type   empirical
+_exptl_absorpt_correction_T_min  0.10
+_exptl_absorpt_correction_T_max  0.64
+_exptl_absorpt_process_details   
+;
+The linear absorption coefficient is wavelength dependent
+and it is calculated as:
+mu = 1.34 + 1.27 * lambda [cm^-1]
+;
+
+
+_exptl_special_details           
+;
+For peak integration a local UB matrix refined for each frame,
+using approximately 25 reflections.
+Hence _cell_measurement_reflns_used 25
+
+
+For final cell dimensions an average of all local
+cells was performed and estimated standard uncertainties
+were obtained from the spread of the local observations
+
+
+Because of the nature of the experiment, it is not possible to give values of
+theta_min and theta_max for the cell determination.
+
+
+Instead, we can give values of
+
+
+#_cell_measurement_sin(theta)/lambda_min 0.18
+#_cell_measurement_sin(theta)/lambda_max 0.55
+
+
+The same applies for the wavelength used for the experiment.
+The range of wavelengths used was 0.5-5.0 Angstroms,
+BUT the bulk of the diffraction information is obtained from
+wavelengths in the range 0.7-2.5 Angstroms.
+
+
+The data collection procedures on the SXD instrument used
+for the single crystal neutron data collection are most
+recently summarised in the Appendix to the following paper
+Wilson, C.C. (1997). J. Mol. Struct. 405, 207-217.
+;
+
+_diffrn_ambient_temperature      60(1)
+_diffrn_radiation_wavelength     0.5-5.0
+_diffrn_radiation_type           neutron
+_diffrn_radiation_source         'ISIS spallation source'
+_diffrn_radiation_monochromator  none
+_diffrn_measurement_device       SXD
+_diffrn_measurement_method       'time-of-flight LAUE diffraction'
+_diffrn_reflns_number            5263
+_diffrn_reflns_av_R_equivalents  0.059
+_diffrn_reflns_av_sigmaI/netI    0.0365
+_diffrn_reflns_limit_h_min       0
+_diffrn_reflns_limit_h_max       15
+_diffrn_reflns_limit_k_min       0
+_diffrn_reflns_limit_k_max       25
+_diffrn_reflns_limit_l_min       0
+_diffrn_reflns_limit_l_max       13
+_diffrn_reflns_theta_min         7.64
+_diffrn_reflns_theta_max         78.39
+_reflns_number_total             2023
+_reflns_number_gt                2023
+_reflns_threshold_expression     >2sigma(I)
+
+_computing_data_collection       ?
+_computing_cell_refinement       ?
+_computing_data_reduction        ?
+_computing_structure_solution    ?
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_molecular_graphics    ?
+_computing_publication_material  ?
+
+_refine_special_details          
+;
+Refinement of F^2^ against ALL reflections. The weighted R-factor wR and
+goodness of fit S are based on F^2^, conventional R-factors R are based
+on F, with F set to zero for negative F^2^. The threshold expression of
+F^2^ > 2sigma(F^2^) is used only for calculating R-factors(gt) etc. and is
+not relevant to the choice of reflections for refinement. R-factors based
+on F^2^ are statistically about twice as large as those based on F, and R-
+factors based on ALL data will be even larger.
+
+
+The variable wavelength nature of the data collection
+procedure means that sensible values of
+#_diffrn_reflns_theta_min & _diffrn_reflns_theta_max
+cannot be given
+
+
+It is also difficult to estimate realistic values of
+maximum sin(theta)/lambda values for two reasons:
+(i) Different sin(theta)/lambda ranges are accessed
+in different parts of the detectors
+(ii) The nature of the data collection occasionally
+allows some reflections at very high sin(theta)/lambda
+to be observed even when no real attempt has been
+made to measure data in this region.
+
+
+However, we can attempt to estimate the sin(theta)/lambda limits as follows:
+
+
+#_diffrn_reflns_sin(theta)/lambda_min 0.088
+#_diffrn_reflns_sin(theta)/lambda_max 0.95
+
+
+Note also that reflections for which the standard profile fitting integration
+procedure fails are excluded from the data set, thus resulting in a high
+elimination rate of weak or "unobserved" peaks from the final data set.
+
+
+The extinction coefficient reported in _refine_ls_extinction_coef is in this
+case the refined value of the mosaic spread in units of 10^-4 rad^-1
+The reference for the extinction method used is:
+Becker, P. & Coppens, P. (1974). Acta Cryst. A30, 129-148.
+;
+
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_matrix_type           full
+_refine_ls_weighting_scheme      calc
+_refine_ls_weighting_details     
+'calc w=1/[\s^2^(Fo^2^)+(0.1000P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_atom_sites_solution_hydrogens   difmap
+_refine_ls_hydrogen_treatment    refall
+_refine_ls_extinction_method     'Becker-Coppens Lorentzian model'
+_refine_ls_extinction_coef       0.470
+_refine_ls_number_reflns         2023
+_refine_ls_number_parameters     118
+_refine_ls_number_restraints     0
+_refine_ls_R_factor_all          0.0588
+_refine_ls_R_factor_gt           0.0588
+_refine_ls_wR_factor_ref         0.1499
+_refine_ls_wR_factor_gt          0.1499
+_refine_ls_goodness_of_fit_ref   1.315
+_refine_ls_restrained_S_all      1.315
+_refine_ls_shift/su_max          0.001
+_refine_ls_shift/su_mean         0.000
+
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+H2 H -0.5750(5) 0.2478(2) -0.6620(5) 0.0199(4) Uani 1 1 d . . .
+H6 H -0.2207(4) 0.1919(3) -0.7908(6) 0.0216(4) Uani 1 1 d . . .
+H4 H -0.4165(4) 0.1489(2) -0.9856(5) 0.0197(4) Uani 1 1 d . . .
+O2 O -0.55915(17) 0.18406(10) -0.23890(19) 0.00970(13) Uani 1 1 d . . .
+N1 N -0.35276(9) 0.13758(6) -0.81688(11) 0.00841(9) Uani 1 1 d . . .
+C2 C -0.53336(12) 0.16103(7) -0.64575(16) 0.00752(11) Uani 1 1 d . . .
+C1 C -0.44574(12) 0.14073(8) -0.40024(14) 0.00724(10) Uani 1 1 d . . .
+H7 H -0.8073(5) 0.1106(3) -0.8688(7) 0.0276(6) Uani 1 1 d . . .
+H5 H -0.8710(4) 0.1043(3) -0.5675(7) 0.0269(6) Uani 1 1 d . . .
+C3 C -0.73975(14) 0.09067(9) -0.69676(18) 0.01023(12) Uani 1 1 d . . .
+H1 H -0.2944(5) 0.0576(2) -0.8032(6) 0.0228(5) Uani 1 1 d . . .
+O1 O -0.27342(16) 0.08368(10) -0.3752(2) 0.00972(13) Uani 1 1 d . . .
+H3 H -0.6957(6) 0.0039(3) -0.6949(8) 0.0285(6) Uani 1 1 d . . .
+
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+H2 0.0249(8) 0.0139(9) 0.0209(11) 0.0024(6) 0.0006(8) 0.0045(7)
+H6 0.0164(6) 0.0256(13) 0.0228(12) -0.0021(8) 0.0006(7) -0.0052(7)
+H4 0.0214(7) 0.0244(12) 0.0134(9) 0.0001(6) -0.0007(6) 0.0011(7)
+O2 0.0110(2) 0.0120(4) 0.0061(3) -0.0005(2) 0.0005(2) 0.0022(2)
+N1 0.00880(13) 0.0096(2) 0.0068(2) 0.00008(13) 0.00041(12) 0.00037(14)
+C2 0.00819(17) 0.0077(3) 0.0066(3) 0.00008(16) -0.00034(16) 0.00054(17)
+C1 0.00850(16) 0.0072(3) 0.0060(3) -0.00022(15) -0.00035(15) 0.00038(19)
+H7 0.0265(10) 0.0366(18) 0.0197(15) 0.0017(10) -0.0090(9) -0.0046(10)
+H5 0.0187(7) 0.0348(18) 0.0273(16) -0.0041(10) 0.0064(8) -0.0023(9)
+C3 0.00933(19) 0.0127(4) 0.0087(3) -0.00033(19) -0.00091(19) -0.0019(2)
+H1 0.0226(8) 0.0186(12) 0.0272(15) 0.0013(8) 0.0037(8) 0.0050(8)
+O1 0.0102(2) 0.0107(4) 0.0083(4) 0.0011(2) -0.0011(2) 0.0027(2)
+H3 0.0319(12) 0.0161(13) 0.0375(19) 0.0009(10) -0.0035(13) -0.0015(10)
+
+_geom_special_details            
+;
+All esds (except the esd in the dihedral angle between two l.s. planes)
+are estimated using the full covariance matrix. The cell esds are taken
+into account individually in the estimation of esds in distances, angles
+and torsion angles; correlations between esds in cell parameters are only
+used when they are defined by crystal symmetry. An approximate (isotropic)
+treatment of cell esds is used for estimating esds involving l.s. planes.
+;
+
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+O2 C1 1.2704(13) . ?
+N1 C2 1.4903(11) . ?
+N1 H6 1.040(3) . ?
+N1 H4 1.059(3) . ?
+N1 H1 1.045(3) . ?
+C2 C3 1.5285(12) . ?
+C2 C1 1.5378(12) . ?
+C2 H2 1.097(3) . ?
+C1 O1 1.2486(13) . ?
+C3 H7 1.104(4) . ?
+C3 H5 1.095(3) . ?
+C3 H3 1.097(4) . ?
+
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+C2 N1 H6 108.79(18) . . ?
+C2 N1 H4 109.50(15) . . ?
+H6 N1 H4 108.6(2) . . ?
+C2 N1 H1 111.72(18) . . ?
+H6 N1 H1 109.9(3) . . ?
+H4 N1 H1 108.2(3) . . ?
+N1 C2 C3 109.82(7) . . ?
+N1 C2 C1 110.06(6) . . ?
+C3 C2 C1 111.07(8) . . ?
+N1 C2 H2 107.00(16) . . ?
+C3 C2 H2 110.52(17) . . ?
+C1 C2 H2 108.27(17) . . ?
+O1 C1 O2 125.70(10) . . ?
+O1 C1 C2 118.44(9) . . ?
+O2 C1 C2 115.86(8) . . ?
+C2 C3 H7 110.0(2) . . ?
+C2 C3 H5 110.6(2) . . ?
+H7 C3 H5 109.1(3) . . ?
+C2 C3 H3 110.82(19) . . ?
+H7 C3 H3 108.1(3) . . ?
+H5 C3 H3 108.1(3) . . ?
+
+_refine_diff_density_max         0.463
+_refine_diff_density_min         -0.246
+_refine_diff_density_rms         0.050
+
