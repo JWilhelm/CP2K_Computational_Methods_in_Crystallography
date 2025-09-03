@@ -1,1 +1,1 @@
-python ../cp2k-scripts/bin/cp2k_plot_bands.py bandstructure.bs
+python3 cp2k-scripts/bin/cp2k_plot_bands.py bandstructure.bs --energy_range -2 3
