@@ -1,0 +1,87 @@
+&GLOBAL
+  PROJECT water_xtb
+  RUN_TYPE MD             
+  WALLTIME 1800
+  IOLEVEL  LOW 
+&END GLOBAL
+
+&FORCE_EVAL
+  METHOD Quickstep
+  &DFT
+    CHARGE 0
+    MULTIPLICITY 1
+    &POISSON
+       PERIODIC XYZ 
+    &END
+    &QS
+      EPS_DEFAULT 1.0E-8
+      METHOD XTB
+      &XTB
+        CHECK_ATOMIC_CHARGES T
+        DO_EWALD  T
+      &END XTB
+    &END QS
+    &SCF
+      SCF_GUESS RESTART
+      EPS_SCF 1.0E-6
+      MAX_SCF 40
+      &OT
+        MINIMIZER DIIS
+        PRECONDITIONER FULL_SINGLE_INVERSE
+      &END
+      &OUTER_SCF
+         EPS_SCF 1.0E-6
+         MAX_SCF 30
+      &END
+    &END SCF
+  &END DFT
+ 
+  &SUBSYS
+    &CELL 
+      ABC [angstrom] 12.42 12.42 12.42
+    &END CELL
+    &TOPOLOGY
+      COORD_FILE_NAME water.xyz
+      COORD_FILE_FORMAT XYZ
+    &END
+    &KIND H                              
+      BASIS_SET DZVP-MOLOPT-SR-GTH
+      POTENTIAL GTH-PBE-q1             
+    &END KIND
+    &KIND O
+      BASIS_SET DZVP-MOLOPT-SR-GTH
+      POTENTIAL GTH-PBE-q6
+    &END KIND
+  &END SUBSYS
+&END FORCE_EVAL
+
+&MOTION
+ &MD
+   ENSEMBLE NVT  ! sampling the canonical ensemble
+   TEMPERATURE [K] 300
+   TIMESTEP [fs] 0.5
+   STEPS 100
+    &THERMOSTAT
+      TYPE CSVR
+      &CSVR
+        TIMECON 200.
+      &END CSVR
+    &END THERMOSTAT
+ &END
+  &PRINT
+   &TRAJECTORY
+     &EACH
+       MD 1
+     &END EACH
+   &END TRAJECTORY
+   &VELOCITIES OFF
+   &END VELOCITIES
+   &FORCES OFF
+   &END FORCES
+   &RESTART_HISTORY
+     &EACH
+       MD 500
+     &END EACH
+   &END RESTART_HISTORY
+  &END PRINT
+&END
